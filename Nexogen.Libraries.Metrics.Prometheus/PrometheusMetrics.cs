@@ -12,7 +12,7 @@ namespace Nexogen.Libraries.Metrics.Prometheus
 
         public PrometheusMetrics()
         {
-            registry = new PrometheusRegistry(new CoreclrExporter(this));
+            registry = new PrometheusRegistry();
         }
 
         public async Task Expose(Stream output)
